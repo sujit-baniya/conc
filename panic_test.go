@@ -47,11 +47,11 @@ func ExamplePanicCatcher_callers() {
 		}
 	}
 	// Output:
-	// github.com/sourcegraph/conc.(*PanicCatcher).tryRecover
+	// github.com/sujit-baniya/conc.(*PanicCatcher).tryRecover
 	// runtime.gopanic
-	// github.com/sourcegraph/conc.ExamplePanicCatcher_callers.func1
-	// github.com/sourcegraph/conc.(*PanicCatcher).Try
-	// github.com/sourcegraph/conc.ExamplePanicCatcher_callers
+	// github.com/sujit-baniya/conc.ExamplePanicCatcher_callers.func1
+	// github.com/sujit-baniya/conc.(*PanicCatcher).Try
+	// github.com/sujit-baniya/conc.ExamplePanicCatcher_callers
 	// testing.runExample
 	// testing.runExamples
 	// testing.(*M).Run

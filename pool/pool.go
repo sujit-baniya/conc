@@ -5,7 +5,7 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/sourcegraph/conc"
+	"github.com/sujit-baniya/conc"
 )
 
 // New creates a new Pool.

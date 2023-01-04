@@ -4,11 +4,11 @@ package stream
 import (
 	"sync"
 
-	"github.com/sourcegraph/conc"
-	"github.com/sourcegraph/conc/pool"
+	"github.com/sujit-baniya/conc"
+	"github.com/sujit-baniya/conc/pool"
 )
 
-// Create a new Stream with default settings
+// New Create a new Stream with default settings
 func New() *Stream {
 	return &Stream{
 		pool: *pool.New(),
@@ -42,7 +42,7 @@ type Stream struct {
 	initOnce sync.Once
 }
 
-// Stream task is a task that is submitted to the stream. Submitted tasks will
+// StreamTask is a task that is submitted to the stream. Submitted tasks will
 // be executed concurrently. It returns a callback that will be called after
 // the task has completed.
 type StreamTask func() Callback

@@ -5,8 +5,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/sourcegraph/conc"
 	"github.com/sourcegraph/sourcegraph/lib/errors"
+	"github.com/sujit-baniya/conc"
 )
 
 // ForEach executes f in parallel over each element in input.
